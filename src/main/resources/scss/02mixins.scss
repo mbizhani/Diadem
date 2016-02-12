@@ -1,0 +1,6 @@
+@mixin define-font($fontName, $baseFontFile) {
+	@font-face {
+		font-family: $fontName;
+		src: url($baseFontFile + '.eot?#') format('eot'), url($baseFontFile + '.woff') format('woff'), url($baseFontFile + '.ttf') format('truetype');
+	}
+}

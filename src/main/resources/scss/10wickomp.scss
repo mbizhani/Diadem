@@ -1,0 +1,7 @@
+@import "01variables";
+
+.w-input, input[type="password"] {
+	border: 1px solid $op-bgColor !important;
+	padding: 1px;
+	border-radius: 0;
+}

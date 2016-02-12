@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.devocative</groupId>
+	<artifactId>diadem</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<name>Demeter's Diadem</name>
+
+	<build>
+		<plugins>
+			<!-- Remote Resources -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-remote-resources-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>bundle</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<!-- This include is very important! Keep it! -->
+					<includes>
+						<include>fonts/**</include>
+						<include>styles/main/d_*.css</include>
+					</includes>
+				</configuration>
+			</plugin>
+
+			<!-- Sass -->
+			<plugin>
+				<groupId>nl.geodienstencentrum.maven</groupId>
+				<artifactId>sass-maven-plugin</artifactId>
+				<version>2.15</version>
+				<configuration>
+					<sassSourceDirectory>src/main/resources/scss</sassSourceDirectory>
+					<destination>src/main/resources/styles/main</destination>
+					<includes>
+						<include>d_dmt.scss</include>
+					</includes>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>initialize</phase>
+						<goals>
+							<goal>update-stylesheets</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- LessCSS -->
+			<!--<plugin>
+				<groupId>org.lesscss</groupId>
+				<artifactId>lesscss-maven-plugin</artifactId>
+				<version>1.7.0.1.1</version>
+				<configuration>
+					<sourceDirectory>src/main/resources/less</sourceDirectory>
+					<outputDirectory>src/main/resources/styles/main</outputDirectory>
+					<compress>false</compress>
+					<includes>
+						<include>w_wpt.less</include>
+
+						<include>w_aml.less</include>
+						<include>w_bsc.less</include>
+						<include>w_clb.less</include>
+						<include>w_clx.less</include>
+						<include>w_etl.less</include>
+						<include>w_olc.less</include>
+						<include>w_ols.less</include>
+						<include>w_olu.less</include>
+					</includes>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>-->
+
+			<!-- YUI -->
+			<!--<plugin>
+				<groupId>net.alchim31.maven</groupId>
+				<artifactId>yuicompressor-maven-plugin</artifactId>
+				<version>1.5.1</version>
+				<executions>
+					<execution>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>compress</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<nosuffix>true</nosuffix>
+				</configuration>
+			</plugin>-->
+
+		</plugins>
+	</build>
+
+</project>
