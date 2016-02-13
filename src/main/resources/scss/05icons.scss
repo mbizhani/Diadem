@@ -4,6 +4,10 @@
 	color: $op-bgColor;
 }
 
+*:disabled .fa {
+	color: $disabled-color;
+}
+
 .ic-imp {
 	color: #ba7e80;
 }

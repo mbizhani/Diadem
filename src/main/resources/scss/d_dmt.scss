@@ -10,10 +10,14 @@
 	font-size: $normal-font !important;
 }
 
+input, button, select {
+	font-family: $default-font;
+}
+
 body {
 	margin: 0;
 	background-color: $bgColor;
-	font-family: BNazanin, Tahoma, sans-serif;
+	font-family: $default-font;
 }
 
 table.dmt-header {
