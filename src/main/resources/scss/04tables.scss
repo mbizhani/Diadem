@@ -4,12 +4,12 @@ table.dmt-simple {
 	background-color: $table-bgColor;
 }
 
-table.dmt-simple > tbody > tr:first-child > td {
+table.dmt-simple > thead > tr > td {
 	background-color: $table-header-bgColor;
 	text-align: center;
 	color: $table-header-color;
 }
 
-table.dmt-simple > tbody > tr:not(:first-child):hover {
+table.dmt-simple > tbody > tr:hover {
 	background-color: $table-row-hover-color;
 }

@@ -2,17 +2,18 @@
 @import "02mixins";
 @import "03fonts";
 @import "04tables";
+@import "05icons";
 @import "10wickomp";
 
 * {
 	color: $color;
-	font-family: BNazanin, Tahoma, sans-serif;
 	font-size: $normal-font !important;
 }
 
 body {
 	margin: 0;
 	background-color: $bgColor;
+	font-family: BNazanin, Tahoma, sans-serif;
 }
 
 table.dmt-header {
@@ -32,11 +33,11 @@ td.dmt-header-menu {
 	width: 100%;
 }
 
-td.dmt-header-menu ul.sm>li>a {
+td.dmt-header-menu ul.sm > li > a {
 	color: $op-color;
 }
 
-td.dmt-header-menu ul.sm>li>a.highlighted {
+td.dmt-header-menu ul.sm > li > a.highlighted {
 	color: $color;
 }
 
