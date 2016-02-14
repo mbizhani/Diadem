@@ -5,9 +5,11 @@
 @import "05icons";
 @import "10wickomp";
 
+// Assigning font-family here affects all elements and it can't be undone in CodeMirror,
+// so the font-family is assigned specifically
 * {
 	color: $color;
-	font-size: $normal-font !important;
+	font-size: $normal-font-size !important;
 }
 
 input, button, select {
@@ -25,11 +27,21 @@ table.dmt-header {
 	width: 100%;
 }
 
-td.dmt-header-brand {
+table.dmt-header * {
 	color: $op-color;
+}
+
+td.dmt-header-brand {
 	padding: 0 10px;
 	font-family: BTitrBold, Tahoma, sans-serif;
 	font-size: $brand-font !important;
+	white-space: nowrap;
+}
+
+td.dmt-header-user {
+	padding: 0 10px;
+	font-family: BKoodakBold, Tahoma, sans-serif;
+	font-size: $normal-font-size !important;
 	white-space: nowrap;
 }
 
@@ -37,14 +49,14 @@ td.dmt-header-menu {
 	width: 100%;
 }
 
-td.dmt-header-menu ul.sm > li > a {
-	color: $op-color;
-}
-
-td.dmt-header-menu ul.sm > li > a.highlighted {
-	color: $color;
-}
-
+//td.dmt-header-menu ul.sm > li > a {
+//	color: $op-color;
+//}
+//
+//td.dmt-header-menu ul.sm > li > a.highlighted {
+//	color: $color;
+//}
+//
 div.dmt-content {
 	margin: 10px 20px;
 }
