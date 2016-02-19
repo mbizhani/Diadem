@@ -60,3 +60,16 @@ td.dmt-header-menu {
 div.dmt-content {
 	margin: 10px 20px;
 }
+
+// always LTR for special tags
+input.al-ltr, p.al-ltr {
+	direction: ltr;
+	text-align: left;
+	font-family: $ltr-font;
+}
+
+div.al-ltr input {
+	direction: ltr;
+	text-align: left;
+	font-family: $ltr-font;
+}
