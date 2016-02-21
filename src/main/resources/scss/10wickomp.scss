@@ -5,3 +5,21 @@
 	padding: 1px;
 	border-radius: 0;
 }
+
+table.w-wiz {
+	border: 1px solid $op-bgColor;
+	padding: 3px;
+}
+
+tr.w-wiz-bar {
+	background-color: $op-color;
+	border-bottom: 1px solid $op-bgColor;
+}
+
+tr.w-wiz-content {
+}
+
+.CodeMirror-hints {
+	direction: ltr;
+	text-align: left;
+}

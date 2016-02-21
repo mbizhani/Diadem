@@ -22,6 +22,14 @@ body {
 	font-family: $default-font;
 }
 
+#ajaxVeilSign {
+	width: 90px;
+	text-align: center;
+	font-size: $normal-font-size - 2 !important;
+	background-color: $op-color;
+	@include border-radius(3px);
+}
+
 table.dmt-header {
 	background-color: $op-bgColor;
 	width: 100%;

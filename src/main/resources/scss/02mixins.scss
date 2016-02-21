@@ -4,3 +4,7 @@
 		src: url($baseFontFile + '.eot?#') format('eot'), url($baseFontFile + '.woff') format('woff'), url($baseFontFile + '.ttf') format('truetype');
 	}
 }
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+}
