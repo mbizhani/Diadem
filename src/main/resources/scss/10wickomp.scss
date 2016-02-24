@@ -12,9 +12,9 @@ table.w-wiz {
 }
 
 td.w-wiz-title {
-	text-align: center;
 	height: 20px;
-	border: 1px solid $op-color;
+	text-align: center;
+	border: 1px dashed $op-bgColor;
 }
 
 tr.w-wiz-bar {
