@@ -11,6 +11,12 @@ table.w-wiz {
 	padding: 3px;
 }
 
+td.w-wiz-title {
+	text-align: center;
+	height: 20px;
+	border: 1px solid $op-color;
+}
+
 tr.w-wiz-bar {
 	background-color: $op-color;
 	border-bottom: 1px solid $op-bgColor;
