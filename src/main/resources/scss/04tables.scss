@@ -1,8 +1,10 @@
 @import "01variables";
 
-//table.dmt-form {
-//	border: 1px solid $op-bgColor;
-//}
+div.dmt-form {
+	border: 1px solid $op-bgColor;
+	padding: 5px;
+	margin: 10px;
+}
 //
 //table.dmt-form th {
 //	background-color: $op-color;
