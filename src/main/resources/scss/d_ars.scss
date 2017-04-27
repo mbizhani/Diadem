@@ -1,0 +1,22 @@
+div.ars-cmd-screen {
+	height: 400px;
+	width: 800px;
+	overflow: auto;
+	border: 1px solid black;
+	direction: ltr;
+	text-align: left;
+	font-family: monospace;
+	margin: 10px;
+	padding: 20px;
+}
+
+div.ars-cmd-prompt {
+	background-color: #cccccc;
+}
+
+div.ars-cmd-line {
+}
+
+div.ars-cmd-error {
+	background-color: #ffd4d4;
+}
