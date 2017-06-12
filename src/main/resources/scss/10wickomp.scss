@@ -1,14 +1,17 @@
 @import "01variables";
 
 .w-input, input[type="password"] {
-	border: 1px solid $op-bgColor !important;
+	border-bottom: 1px solid $op-bgColor !important;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
 	padding: 1px;
 	border-radius: 0;
 }
 
 div.w-input-lbl {
-	font-weight: bold;
 	background-color: $op-color;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -22,9 +25,9 @@ table.w-wiz {
 }
 
 td.w-wiz-title {
+	border: 1px dashed $op-bgColor;
 	height: 20px;
 	text-align: center;
-	border: 1px dashed $op-bgColor;
 }
 
 tr.w-wiz-bar {

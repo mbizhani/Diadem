@@ -15,6 +15,18 @@ input, button, select {
 	font-family: $default-font;
 }
 
+button {
+	background-color: $op-bgColor-light;
+	border: 1px solid $op-bgColor;
+	margin: 0 3px;
+	padding: 2px 10px;
+	transition-duration: 0.2s;
+}
+
+button:hover {
+	background-color: $op-bgColor-hover;
+}
+
 body {
 	margin: 0;
 	color: $color;
@@ -41,14 +53,14 @@ table.dmt-header * {
 
 td.dmt-header-brand {
 	padding: 0 10px;
-	font-family: BTitrBold, Tahoma, sans-serif;
+	font-family: $default-font;
 	font-size: $brand-font !important;
 	white-space: nowrap;
 }
 
 td.dmt-header-user {
 	padding: 0 10px;
-	font-family: BKoodakBold, Tahoma, sans-serif;
+	font-family: $default-font;
 	font-size: $normal-font-size !important;
 	white-space: nowrap;
 }
@@ -80,4 +92,9 @@ div.al-ltr input {
 	direction: ltr;
 	text-align: left;
 	font-family: $ltr-font;
+}
+
+// since using Yekan webfont, some characters are rendered partially, so increase line-height! default was 18px
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber {
+	line-height: 23px;
 }
