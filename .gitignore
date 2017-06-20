@@ -1,5 +1,6 @@
 .idea/
 target/
+src/main/resources/less/
 src/main/resources/styles/
 
 *.iml
