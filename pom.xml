@@ -36,7 +36,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/mbizhani/Diadem.git</connection>
 		<developerConnection>scm:git:https://github.com/mbizhani/Diadem.git</developerConnection>
-		<url>https://github.com/mbizhani/</url>
+		<url>https://github.com/mbizhani/Diadem.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -244,11 +244,11 @@
 			<distributionManagement>
 				<snapshotRepository>
 					<id>localNexus</id>
-					<url>http://localnexus:8081/nexus/content/repositories/DMSnapshot/</url>
+					<url>http://localnexus:8080/nexus/content/repositories/snapshots/</url>
 				</snapshotRepository>
 				<repository>
 					<id>localNexus</id>
-					<url>http://localnexus:8081/nexus/content/repositories/DMRelease/</url>
+					<url>http://localnexus:8080/nexus/content/repositories/releases/</url>
 				</repository>
 			</distributionManagement>
 		</profile>
