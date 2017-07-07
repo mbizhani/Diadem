@@ -11,6 +11,18 @@
 	font-size: $normal-font-size !important;
 }
 
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	color: $color;
+	background-color: $bgColor;
+	font-family: $default-font;
+	height: 100%;
+}
+
 input, button, select {
 	font-family: $default-font;
 }
@@ -27,13 +39,6 @@ button:hover {
 	background-color: $op-bgColor-hover;
 }
 
-body {
-	margin: 0;
-	color: $color;
-	background-color: $bgColor;
-	font-family: $default-font;
-}
-
 #ajaxVeilSign {
 	width: 90px;
 	text-align: center;
@@ -45,6 +50,7 @@ body {
 table.dmt-header {
 	background-color: $op-bgColor;
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 table.dmt-header * {
@@ -69,16 +75,8 @@ td.dmt-header-menu {
 	width: 100%;
 }
 
-//td.dmt-header-menu ul.sm > li > a {
-//	color: $op-color;
-//}
-//
-//td.dmt-header-menu ul.sm > li > a.highlighted {
-//	color: $color;
-//}
-//
 div.dmt-content {
-	margin: 10px 20px;
+	height: calc(100% - 60px);
 }
 
 // always LTR for special tags
@@ -92,9 +90,4 @@ div.al-ltr input {
 	direction: ltr;
 	text-align: left;
 	font-family: $ltr-font;
-}
-
-// since using Yekan webfont, some characters are rendered partially, so increase line-height! default was 18px
-.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber {
-	line-height: 21px;
 }
