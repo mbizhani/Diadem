@@ -75,8 +75,12 @@ td.dmt-header-menu {
 	width: 100%;
 }
 
-div.dmt-content {
+.dmt-has-header div.dmt-content {
 	height: calc(100% - 60px);
+}
+
+.dmt-no-header div.dmt-content {
+	height: 100%;
 }
 
 // always LTR for special tags
