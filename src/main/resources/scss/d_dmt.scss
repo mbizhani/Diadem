@@ -95,3 +95,13 @@ div.al-ltr input {
 	text-align: left;
 	font-family: $ltr-font;
 }
+
+div.w-tab {
+	width: 100%;
+	height: 100%;
+}
+
+div.w-tab > div {
+	width: 100%;
+	height: 100%;
+}
