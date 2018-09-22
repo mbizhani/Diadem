@@ -4,6 +4,10 @@
 	color: $op-bgColor;
 }
 
+button:hover:enabled > .fa {
+	color: $bgColor;
+}
+
 *:disabled .fa {
 	color: $disabled-color;
 }

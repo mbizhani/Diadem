@@ -3,9 +3,9 @@ $bgColor: #ffffff;
 $disabled-color: #aaaaaa;
 
 $op-color: #f5f5dc;
-$op-bgColor: #0479ba;
-$op-bgColor-light: #e2ebff;
-$op-bgColor-hover: #6CAEF5;
+$op-bgColor: #4682b4;
+$op-bgColor-light: lighten($op-bgColor, 40%);
+$op-bgColor-hover: darken($op-bgColor, 10%);
 
 $normal-font-size: 14px;
 $brand-font: 20px;
